@@ -3,14 +3,14 @@ import { lazy } from 'react'
 
 import { LoadingScreen } from '@/shared/ui/LoadingScreen'
 
-import { authorizedRoute, currentRoute } from './model'
+import { anonymousRoute, currentRoute } from './model'
 
-export const HomePage = lazy(() => import('./Home'))
+const SignUpPage = lazy(() => import('./SignUp'))
 
-export const HomeRoute = {
+export const SignUpRoute = {
   view: createRouteView({
-    route: authorizedRoute,
-    view: HomePage,
+    route: anonymousRoute,
+    view: SignUpPage,
     otherwise: LoadingScreen,
   }),
   route: currentRoute,

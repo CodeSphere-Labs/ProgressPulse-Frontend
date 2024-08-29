@@ -11,8 +11,8 @@ import { appStarted } from '@/shared/config/init'
 export const routes = {
   home: createRoute(),
   auth: {
-    register: createRoute(),
-    login: createRoute(),
+    signUp: createRoute(),
+    signIn: createRoute(),
   },
 }
 
@@ -21,12 +21,12 @@ export const controls = createRouterControls()
 export const router = createHistoryRouter({
   routes: [
     {
-      path: '/register',
-      route: routes.auth.register,
+      path: '/sign-up',
+      route: routes.auth.signUp,
     },
     {
-      path: '/login',
-      route: routes.auth.login,
+      path: '/sign-in',
+      route: routes.auth.signIn,
     },
     {
       path: '/',
