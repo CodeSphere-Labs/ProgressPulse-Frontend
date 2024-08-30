@@ -1,9 +1,9 @@
-import { Button } from '@mantine/core'
+import { Navbar } from '@/widgets/Navbar/Navbar'
 
 const Home = () => {
   return (
     <>
-      Home <Button>Home</Button>
+      <Navbar />
     </>
   )
 }

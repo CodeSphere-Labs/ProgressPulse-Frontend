@@ -1,0 +1,14 @@
+{
+  "extends": ["stylelint-config-standard", "stylelint-config-clean-order"],
+  "rules": {
+    "selector-class-pattern": [
+      "^[a-z]+([A-Z][a-z]*)?$",
+      {
+        "message": "Selector class names should be in camelCase format like or single-word lowercase."
+      }
+    ],
+    "at-rule-no-unknown": {
+        "ignoreAtRules": ["mixin"]
+    }
+  }
+}

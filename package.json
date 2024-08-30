@@ -16,6 +16,7 @@
     "@mantine/core": "^7.11.2",
     "@mantine/form": "^7.11.2",
     "@mantine/hooks": "^7.11.2",
+    "@tabler/icons-react": "^3.14.0",
     "@withease/contracts": "^1.1.0",
     "atomic-router": "^0.10.1",
     "atomic-router-react": "github:atomic-router/react",
@@ -41,6 +42,9 @@
     "postcss-preset-mantine": "^1.17.0",
     "postcss-simple-vars": "^7.0.1",
     "prettier": "^3.0.0",
+    "stylelint": "^16.9.0",
+    "stylelint-config-clean-order": "^6.1.0",
+    "stylelint-config-standard": "^36.0.1",
     "typescript": "^5.2.2",
     "vite": "^5.4.1"
   }
