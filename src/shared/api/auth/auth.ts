@@ -29,27 +29,16 @@ interface User {
 
   email: string
   role: Role
-  accessToken: string
 }
 
 export const $user = createStore<User | null>(null)
 
-export const $token = createStore<string | null>(null)
 const $authenticationStatus = createStore(AuthStatus.Initial)
 
 $authenticationStatus.on(signInMutation.start, (status) => {
   if (status === AuthStatus.Initial) return AuthStatus.Pending
   return status
 })
-
-$token.on(
-  refreshTokenMutation.finished.success,
-  (_, response) => response.result.accessToken,
-)
-$token.on(
-  signInMutation.finished.success,
-  (_, response) => response.result.accessToken,
-)
 
 $user.on(signInMutation.finished.success, (_, response) => response.result)
 $user.on(

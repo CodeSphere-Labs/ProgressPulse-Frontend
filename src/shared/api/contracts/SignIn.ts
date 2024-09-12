@@ -7,6 +7,4 @@ export const SignInContract = obj({
   patronymic: str,
   email: str,
   role: or(val('YODA'), val('JEDI'), val('PADAWAN')),
-
-  accessToken: str,
 })

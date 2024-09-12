@@ -12,5 +12,4 @@ export interface SignInResponse {
   patronymic: string
   email: string
   role: Role
-  accessToken: string
 }
